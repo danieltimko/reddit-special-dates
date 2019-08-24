@@ -5,6 +5,8 @@ days = [31, 30, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31]
 
 
 def primality_test(n):
+    if n is 1:
+        return False
     for i in range(2, int(math.sqrt(n))+1):
         if not n%i:
             return False
